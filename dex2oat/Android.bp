@@ -163,6 +163,7 @@ cc_defaults {
 
 cc_library_headers {
     name: "dex2oat_headers",
+    cflags: ["-O3"],
     visibility: [
         // TODO(b/133140750): Clean this up.
         "//frameworks/native/cmds/installd",
@@ -201,6 +202,7 @@ cc_defaults {
 
 cc_defaults {
     name: "dex2oat-pgo-defaults",
+    cflags: ["-O3"],
     defaults_visibility: [
         "//art:__subpackages__",
         "//external/vixl",

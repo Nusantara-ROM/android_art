@@ -527,6 +527,7 @@ art_cc_library {
         "libart_nativeunwind_defaults",
         "art_pgo_defaults",
     ],
+    cflags: ["-O3"],
     whole_static_libs: [
     ],
     static_libs: [
