@@ -2031,7 +2031,7 @@ class ScopedExceptionStorage {
 };
 
 std::ostream& operator<<(std::ostream& os, const Thread& thread);
-std::ostream& operator<<(std::ostream& os, const StackedShadowFrameType& thread);
+std::ostream& operator<<(std::ostream& os, StackedShadowFrameType thread);
 
 }  // namespace art
 
