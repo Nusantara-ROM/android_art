@@ -2449,6 +2449,9 @@ HInstruction* HGraph::InlineInto(HGraph* outer_graph, HInvoke* invoke) {
   if (HasIrreducibleLoops()) {
     outer_graph->SetHasIrreducibleLoops(true);
   }
+  if (HasDirectCriticalNativeCall()) {
+    outer_graph->SetHasDirectCriticalNativeCall(true);
+  }
   if (HasTryCatch()) {
     outer_graph->SetHasTryCatch(true);
   }
